@@ -1,0 +1,16 @@
+.content-shop {
+  padding: 65px 0 0 0;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-shop p {
+  margin: auto;
+}
+
+@media (max-width:767px) {
+  .content-shop{
+    padding: 50px 0 0 0;
+  }
+}

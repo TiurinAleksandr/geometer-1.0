@@ -7,8 +7,6 @@
   <title>Geometer</title>
   <link rel="icon" type="image/png" sizes="64x64" href="img/icons/crown-icon.png">
 
-  <!--bootstrap 5-->
-
   <!--стили-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -41,7 +39,7 @@
               <li><a href="#services" class="header__link">Услуги</a></li>
               <li><a href="#portfolio" class="header__link">Проекты</a></li>
               <li><a href="#contacts" class="header__link">Контакты</a></li>
-              <li><a href="SHOP/shop.html" class="header__link">Магазин</a></li>
+              <li><a href="" class="header__link">Магазин</a></li>
             </ul>
           </nav>
         </div>
@@ -65,33 +63,15 @@
       <!--ABOUT-->
       <div class="about" id="about">
         <div class="container">
-          <div class="about__title">Компания  Geometer</div>
-          <div class="about__facts">
-
-            <div class="about__fact about__brand">
-              <div class="about__image">
-                <img src="img/about__brand.png" alt="">
-              </div>
-              <div class="about__fact-text">Личный бренд Михаила Бухгаммера</div>
+          <div class="about__title">Компания Geometer -</div>
+          <div class="about__content">
+            <div class="about__list">
+              <li>личный бренд Михаила Бухгаммера (Калининград)</li>
+              <li>специализируется на управлении строительными и ремонтными проектами и технадзоре</li>
+              <li>скажите, что Вам нужно построить -> мы выберем проверенную бригаду -> она выполнит работу под нашим контролем</li>
             </div>
-
-            <div class="about__fact about__function">
-              <div class="about__image">
-                <img src="img/about__function.png" alt="">
-              </div>
-              <div class="about__fact-text">Cпециализируется на управлении строительными и ремонтными проектами и технадзоре</div>
-            </div>
-
+            <div class="about__more">больше...</div>
           </div>
-          <div class="about__scheme">
-            <div class="about__scheme-step">скажите, что Вам нужно построить</div> 
-            <div class="about__scheme-arrow">›</div>
-            <div class="about__scheme-step">мы выберем проверенную бригаду</div>
-            <div class="about__scheme-arrow">›</div>
-            <div class="about__scheme-step">она выполнит работу под нашим контролем</div> 
-          </div>
-          <div class="about__more">
-            <a href="ABOUT/about.html">Больше о компании</a></div>
         </div>
       </div>
 
@@ -189,16 +169,14 @@
               <div class="feedback__title">Форма обратной связи</div>
               <div class="feedback__text">Опишите, что Вам необходимо построить, и мы свяжемся с Вами для обсуждения деталей</div>
               <div class="feedback__form">
-
-                <form name="order-call" id="feedback" action="#">
+                <form name="order-call" action="">
                   <div class="feedback__data feedback__form-element">
-                    <input id="feedback_name" class="feedback__field feedback__field-name _req" type="text" placeholder="Ваше имя">
-                    <input id="feedback_phone" class="feedback__field feedback__field-phone _req" type="text" placeholder="Ваш телефон">
+                    <input class="feedback__field feedback__field-name" type="text" placeholder="Ваше имя">
+                    <input class="feedback__field feedback__field-phone" type="text" placeholder="Ваш телефон">
                   </div>
-                  <textarea id="feedback_message" class="feedback__field feedback__field-message feedback__form-element _req" placeholder="Сообщение"></textarea>
-                  <button type="submit" class="feedback__button">Заказать звонок</button>
+                  <input class="feedback__field feedback__field-message feedback__form-element" type="text" placeholder="Сообщение">
                 </form>
-                
+                <button class="feedback__button">Заказать звонок</button>
               </div>
             </div>
           </div>
@@ -226,7 +204,7 @@
               <div class="project-card__layer">
                 <div class="name-project">Название проекта</div>
                 <div class="description-project">Краткое описание проекта Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quibusdam sit et possimus sunt quis, placeat quod consequuntur? Assumenda, laudantium!</div>
-                <div class="more-project"><a href="">Подробнее</a></div>
+                <div class="more-project">Подробнее</div>
               </div>
             </div>
 
@@ -234,7 +212,7 @@
               <div class="project-card__layer">
                 <div class="name-project">Название проекта</div>
                 <div class="description-project">Краткое описание проекта Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit atque nulla et molestiae laborum voluptatem suscipit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quibusdam sit et possimus sunt quis, placeat quod consequuntur? Assumenda, laudantium!</div>
-                <div class="more-project"><a href="">Подробнее</a></div>
+                <div class="more-project">Подробнее</div>
               </div>
             </div>
             
@@ -242,7 +220,7 @@
               <div class="project-card__layer">
                 <div class="name-project">Название проекта</div>
                 <div class="description-project">Краткое описание проекта Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quibusdam sit et possimus sunt quis, placeat quod consequuntur? Assumenda, laudantium!</div>
-                <div class="more-project"><a href="">Подробнее</a></div>
+                <div class="more-project">Подробнее</div>
               </div>
             </div>
 
@@ -250,7 +228,7 @@
               <div class="project-card__layer">
                 <div class="name-project">Название проекта</div>
                 <div class="description-project">Краткое описание проекта Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quibusdam sit et possimus sunt quis, placeat quod consequuntur? Assumenda, laudantium!</div>
-                <div class="more-project"><a href="">Подробнее</a></div>
+                <div class="more-project">Подробнее</div>
               </div>
             </div>
 
@@ -258,7 +236,7 @@
               <div class="project-card__layer">
                 <div class="name-project">Название проекта</div>
                 <div class="description-project">Краткое описание проекта Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quibusdam sit et possimus sunt quis, placeat quod consequuntur? Assumenda, laudantium!</div>
-                <div class="more-project"><a href="">Подробнее</a></div>
+                <div class="more-project">Подробнее</div>
               </div>
             </div>
 
@@ -266,13 +244,13 @@
               <div class="project-card__layer">
                 <div class="name-project">Название проекта</div>
                 <div class="description-project">Краткое описание проекта Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quibusdam sit et possimus sunt quis, placeat quod consequuntur? Assumenda, laudantium!</div>
-                <div class="more-project"><a href="">Подробнее</a></div>
+                <div class="more-project">Подробнее</div>
               </div>
             </div>
 
           </div>
           <div class="portfolio__more">
-            <a href="PROJECTS/projects.html" class="portfolio__link">Больше работ</a>
+            <a href="" class="portfolio__link">Больше работ</a>
           </div>
         </div>
       </div>
@@ -282,9 +260,9 @@
         <div class="container">
           <div class="to-shop__content">
             <div class="to-shop__text">Вы можете приобрести у нас строительные материалы</div>
-            <a href="SHOP/shop.html" class="to-shop__button">
-                <p>Перейти в магазин</p>
-              </a>
+            <button class="to-shop__button">
+              <p>Перейти в магазин</p>
+            </button>
           </div>
         </div>
       </div>
@@ -388,7 +366,7 @@
                 <form name="order-call" action="">
                   <input class="footer__field footer__field-name" type="text" placeholder="Ваше имя">
                   <input class="footer__field footer__field-phone" type="text" placeholder="Ваш телефон">
-                  <button class="footer__call-button" formaction="">Заказать звонок</button>
+                  <button class="footer__call-button">Заказать звонок</button>
                 </form>
               </div>
             </div>
@@ -401,7 +379,7 @@
                   <li><a href="#about" class="footer__navigation-link">О компании</a></li>
                   <li><a href="#services" class="footer__navigation-link">Услуги</a></li>
                   <li><a href="#portfolio" class="footer__navigation-link">Проекты</a></li>
-                  <li><a href="SHOP/shop.html" class="footer__navigation-link">Интернет-магазин</a></li>
+                  <li><a href="" class="footer__navigation-link">Интернет-магазин</a></li>
                   <li><a href="#reviews" class="footer__navigation-link">Отзывы</a></li>
                   <li><a href="" class="footer__navigation-link">Партнёры</a></li>
                 </ul>
