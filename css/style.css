@@ -216,7 +216,7 @@ html, body {
   width: 65%;
 }
 
-@media (max-width:576px) {
+@media (max-width:768px) {
   .main {
     height: 65vh;
     background-image: url(../img/main-back-phone.jpeg)
