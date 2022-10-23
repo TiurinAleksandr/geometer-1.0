@@ -18,7 +18,9 @@ a:focus,a:active{
 	outline: none;
 	color: none;
 }
-
+ul {
+	margin: 0;
+}
 nav,footer,header,aside{display: block;}
 
 html,body{

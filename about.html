@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>GeometerSHOP</title>
+  <title>Geometer</title>
   <link rel="icon" type="image/png" sizes="64x64" href="img/icons/crown-icon.png">
 
+  
+  <!--bootstrap 5--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <!--стили-->
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="about-style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!--шрифты-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,65 +23,71 @@
 <body>
   <div class="wrapper">
 
-  <!--скрипт-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="js/script.js"></script>
-
     <!------------------------------------------------   HEADER   -------------------------------------------------------->
     <header class="header">
       <!--header-->
       <div class="header__container">
         <div class="header__body">
-          <a class="header__logo" href="../index.html">Geometer</a>
+          <a class="header__logo" href="index.html">Geometer</a>
           <div class="header__burger">
             <span></span>
           </div>
           <nav class="header__menu">
             <ul class="header__list">
-              <li><a href="../index.html" class="header__link">О компании</a></li>
-              <li><a href="../index.html" class="header__link">Услуги</a></li>
-              <li><a href="../index.html" class="header__link">Проекты</a></li>
-              <li><a href="../index.html" class="header__link">Контакты</a></li>
-              <li><a href="" class="header__link">Магазин</a></li>
+              <li><a href="#about" class="header__link">О компании</a></li>
+              <li><a href="#services" class="header__link">Услуги</a></li>
+              <li><a href="#portfolio" class="header__link">Проекты</a></li>
+              <li><a href="#contacts" class="header__link">Контакты</a></li>
+              <li><a href="SHOP/shop.html" class="header__link">Магазин</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <!------------------------------------------------   CONTENT  -------------------------------------------------------->
+    <!------------------------------------------------   CONTENT   -------------------------------------------------------->
     <div class="content">
-
-      <!--ABOUT-->
-      <div class="about" id="about">
+      <div class="about-page">
         <div class="container">
-          <div class="about__title">Компания Geometer -</div>
-          <div class="about__content">
-            <div class="about__list">
-              <li>личный бренд Михаила Бухгаммера (Калининград)</li>
-              <li>специализируется на управлении строительными и ремонтными проектами и технадзоре</li>
-              <li>скажите, что Вам нужно построить -> мы выберем проверенную бригаду -> она выполнит работу под нашим контролем</li>
+          <div class="row adaptive-column">
+            <div class="col-5 about-page__image">
+              <img src="img/big-logo-gold.png" alt="">
             </div>
+            <div class="col about-page__content">
+              <div class="row about-page__title">Компания Geometer</div>
+              <div class="row about-page__text">Geometer - молодая компания, которая занимается всеми видами строительства и ремонта, а также продажей строй-материалов. <br> Geometer - эксперт в области технадзора и управления проектами. Сильная сторона компании - умение видеть компетентность специалистов и строительных бригад, а также способность грамотно общаться с работниками. Благодаря этому, проекты заказчиков выполняют хорошо квалифицированные рабочие.</div>
+              <div class="about__facts">
+                <div class="about__fact about__brand">
+                  <div class="about__image">
+                    <img src="img/about__brand.png" alt="">
+                  </div>
+                  <div class="about__fact-text">Личный бренд Михаила Бухгаммера</div>
+                </div>
+    
+                <div class="about__fact about__function">
+                  <div class="about__image">
+                    <img src="img/about__function.png" alt="">
+                  </div>
+                  <div class="about__fact-text">Cпециализируется на управлении строительными и ремонтными проектами и технадзоре</div>
+                </div>
+    
+              </div>
+              <div class="about__scheme">
+                <div class="about__scheme-step">скажите, что Вам нужно построить</div> 
+                <div class="about__scheme-arrow">›</div>
+                <div class="about__scheme-step">мы выберем проверенную бригаду</div>
+                <div class="about__scheme-arrow">›</div>
+                <div class="about__scheme-step">она выполнит работу под нашим контролем</div> 
+              </div>
+            </div>    
           </div>
         </div>
       </div>
-
-      <!--order-call-->
-      <div class="order-call">
-        <div class="container">
-          <div class="order-call__content">
-            <div class="order-call__text">У Вас есть вопросы? Задайте их нашему специалисту!</div>
-            <button class="order-call__button">Заказать звонок</button>
-          </div>
-        </div>
-      </div>
-
-      
     </div>
-
-    <!------------------------------------------------   FOOTER  --------------------------------------------------------->
-    <footer class="footer" id="contacts">
-      <!--footer-->
+    
+    <!------------------------------------------------   FOOTER   -------------------------------------------------------->
+    <div class="about-page__footer">
+      <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer__content">
           <div class="footer__columns">
@@ -91,7 +99,7 @@
                 <form name="order-call" action="">
                   <input class="footer__field footer__field-name" type="text" placeholder="Ваше имя">
                   <input class="footer__field footer__field-phone" type="text" placeholder="Ваш телефон">
-                  <button class="footer__call-button">Заказать звонок</button>
+                  <button class="footer__call-button" formaction="">Заказать звонок</button>
                 </form>
               </div>
             </div>
@@ -104,7 +112,7 @@
                   <li><a href="#about" class="footer__navigation-link">О компании</a></li>
                   <li><a href="#services" class="footer__navigation-link">Услуги</a></li>
                   <li><a href="#portfolio" class="footer__navigation-link">Проекты</a></li>
-                  <li><a href="" class="footer__navigation-link">Интернет-магазин</a></li>
+                  <li><a href="SHOP/shop.html" class="footer__navigation-link">Интернет-магазин</a></li>
                   <li><a href="#reviews" class="footer__navigation-link">Отзывы</a></li>
                   <li><a href="" class="footer__navigation-link">Партнёры</a></li>
                 </ul>
@@ -142,7 +150,13 @@
     <div class="footer__copyright">
       <p>© Michael Buchhammer & Geometer</p>
     </div>
-
+    </div>
+    
   </div>
+
+  <!--скрипт-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>  

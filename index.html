@@ -7,11 +7,12 @@
   <title>Geometer</title>
   <link rel="icon" type="image/png" sizes="64x64" href="img/icons/crown-icon.png">
 
-  <!--bootstrap 5-->
+  
+  <!--bootstrap 5--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
   <!--стили-->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!--шрифты-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +57,7 @@
         <div class="main__layer">
           <div class="container">
             <div class="main__logo">
-              <img class="big-logo" src="img/big-logo2.png" alt="здесь должен был быть логотип );">
+              <img class="big-logo" src="img/big-logo-main.png" alt="здесь должен был быть логотип );">
             </div>
           </div>
         </div>
@@ -66,32 +67,10 @@
       <div class="about" id="about">
         <div class="container">
           <div class="about__title">Компания  Geometer</div>
-          <div class="about__facts">
-
-            <div class="about__fact about__brand">
-              <div class="about__image">
-                <img src="img/about__brand.png" alt="">
-              </div>
-              <div class="about__fact-text">Личный бренд Михаила Бухгаммера</div>
-            </div>
-
-            <div class="about__fact about__function">
-              <div class="about__image">
-                <img src="img/about__function.png" alt="">
-              </div>
-              <div class="about__fact-text">Cпециализируется на управлении строительными и ремонтными проектами и технадзоре</div>
-            </div>
-
-          </div>
-          <div class="about__scheme">
-            <div class="about__scheme-step">скажите, что Вам нужно построить</div> 
-            <div class="about__scheme-arrow">›</div>
-            <div class="about__scheme-step">мы выберем проверенную бригаду</div>
-            <div class="about__scheme-arrow">›</div>
-            <div class="about__scheme-step">она выполнит работу под нашим контролем</div> 
-          </div>
+          <div class="about__text">Geometer - молодая компания, которая занимается всеми видами строительства и ремонта, а также продажей строй-материалов. <br> Geometer - эксперт в области технадзора и управления проектами. Сильная сторона компании - умение видеть компетентность специалистов и строительных бригад, а также способность грамотно общаться с работниками. Благодаря этому, проекты заказчиков выполняют хорошо квалифицированные рабочие.</div>
           <div class="about__more">
-            <a href="ABOUT/about.html">Больше о компании</a></div>
+            <a href="about.html">Больше о компании</a>
+          </div>
         </div>
       </div>
 
@@ -100,7 +79,7 @@
         <div class="container">
           <div class="order-call__content">
             <div class="order-call__text">У Вас есть вопросы? Задайте их нашему специалисту!</div>
-            <button class="order-call__button">Заказать звонок</button>
+            <div class="order-call__button"><a href="#contacts">Заказать звонок</a></div>
           </div>
         </div>
       </div>
@@ -118,15 +97,15 @@
               <div class="services__body">
                 <div class="services__name-service">Управление проектами, строительными компаниями и бригадами</div>
                 <div class="services__description-service">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: повышение уровня гражданского сознания выявляет срочную потребность инновационных методов управления процессами.  Имеется спорная точка зрения, гласящая примерно следующее: реплицированные с зарубежных источников.</div>
-                <div class="services__more-service"><a href="">Подробнее</a></div>
+                <div class="services__more-service"><a href="service1.html">Подробнее</a></div>
               </div>
             </div>
 
             <div class="services__card even-card card_2">
               <div class="services__body">
                 <div class="services__name-service">Дизайн проект, ремонт квартир</div>
-                <div class="services__description-service">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: повышение уровня гражданского сознания выявляет срочную потребность инновационных методов управления процессами.  Имеется спорная точка зрения, гласящая примерно следующее: реплицированные с зарубежных источников.</div>
-                <div class="services__more-service"><a href="">Подробнее</a>  </div>
+                <div class="services__description-service"> - составление стандартного/полного дизайн-проекта дома/квартиры <br> - дизайнерский, капитальный, элитный и др. виды ремонта квартиры <br> - полный цикл перепланировки квартиры от дизайна до ремонта</div>
+                <div class="services__more-service"><a href="service2.html">Подробнее</a>  </div>
               </div>
               <div class="services__image">
                 <img src="img/services_2.png" alt="">
@@ -139,8 +118,8 @@
               </div>
               <div class="services__body">
                 <div class="services__name-service">Технадзор, снабжение</div>
-                <div class="services__description-service">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: повышение уровня гражданского сознания выявляет срочную потребность инновационных методов управления процессами.  Имеется спорная точка зрения, гласящая примерно следующее: реплицированные с зарубежных источников.</div>
-                <div class="services__more-service"><a href="">Подробнее</a>  </div>
+                <div class="services__description-service">- контроль над соблюдением технологий, правил и нормативов <br>- отслеживание объемов работ, предъявляемых к оплате; контроль над соблюдением бюджета <br>- регулярные отчёты по работе, ведение сметы проекта <br>- контроль над соблюдением сроков на этапах строительства/ремонта <br>- контроль качества используемых материалов</div>
+                <div class="services__more-service"><a href="service3.html">Подробнее</a>  </div>
               </div>
             </div>
 
@@ -148,7 +127,7 @@
               <div class="services__body">
                 <div class="services__name-service">Экспертная оценка недвижимости</div>
                 <div class="services__description-service">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: повышение уровня гражданского сознания выявляет срочную потребность инновационных методов управления процессами.  Имеется спорная точка зрения, гласящая примерно следующее: реплицированные с зарубежных источников.</div>
-                <div class="services__more-service"><a href="">Подробнее</a>  </div>
+                <div class="services__more-service"><a href="service4.html">Подробнее</a>  </div>
               </div>
               <div class="services__image">
                 <img src="img/services_4.jpg" alt="">
@@ -162,7 +141,7 @@
               <div class="services__body">
                 <div class="services__name-service">Строительные и ремонтные материалы</div>
                 <div class="services__description-service">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: повышение уровня гражданского сознания выявляет срочную потребность инновационных методов управления процессами.  Имеется спорная точка зрения, гласящая примерно следующее: реплицированные с зарубежных источников.</div>
-                <div class="services__more-service"><a href="">Подробнее</a>  </div>
+                <div class="services__more-service"><a href="service5.html">Подробнее</a>  </div>
               </div>
             </div>
 
@@ -170,7 +149,7 @@
               <div class="services__body">
                 <div class="services__name-service">Деревья, саженцы, цветы</div>
                 <div class="services__description-service">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: повышение уровня гражданского сознания выявляет срочную потребность инновационных методов управления процессами.  Имеется спорная точка зрения, гласящая примерно следующее: реплицированные с зарубежных источников.</div>
-                <div class="services__more-service"><a href="">Подробнее</a>  </div>
+                <div class="services__more-service"><a href="service6.html">Подробнее</a>  </div>
               </div>
               <div class="services__image">
                 <img src="img/services_6.png" alt="">
@@ -190,15 +169,14 @@
               <div class="feedback__text">Опишите, что Вам необходимо построить, и мы свяжемся с Вами для обсуждения деталей</div>
               <div class="feedback__form">
 
-                <form name="order-call" id="feedback" action="#">
+                <form method="GET" name="orderCall" id="feedback" action=''>
                   <div class="feedback__data feedback__form-element">
-                    <input id="feedback_name" class="feedback__field feedback__field-name _req" type="text" placeholder="Ваше имя">
-                    <input id="feedback_phone" class="feedback__field feedback__field-phone _req" type="text" placeholder="Ваш телефон">
+                    <input name="feedbackName" id="feedback_name" class="feedback__field feedback__field-name _req" type="text" placeholder="Ваше имя">
+                    <input name="feedbackPhone" id="feedback_phone" class="feedback__field feedback__field-phone _req" type="text" placeholder="Ваш телефон">
                   </div>
                   <textarea id="feedback_message" class="feedback__field feedback__field-message feedback__form-element _req" placeholder="Сообщение"></textarea>
                   <button type="submit" class="feedback__button">Заказать звонок</button>
                 </form>
-                
               </div>
             </div>
           </div>
@@ -290,23 +268,58 @@
       </div>
 
       <!--REVIEWS-->
-      <div class="reviews" id="reviews">
+      <div class="reviews">
         <div class="container">
           <div class="reviews__content">
             <div class="reviews__title">Отзывы</div>
-            <div class="reviews__slider">
-              <div class="reviews__slider-content">
-                <div class="reviews__author">
-                  <div class="reviews__author-name">Имя Автора Отзыва</div>
-                  <div class="reviews__author-from">Страна, Город</div>
+            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+    
+                <div class="carousel-item active">
+                  <div class="review-card">
+                    <div class="reviews__author">
+                      <div class="reviews__author-name">Имя Автора Отзыва1</div>
+                      <div class="reviews__author-from">Страна, Город</div>
+                    </div>
+                    <div class="reviews__text">Текст отзыва. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, excepturi incidunt voluptas cum expedita, porro nemo recusandae ipsum itaque vero soluta assumenda ex deleniti numquam ad est, adipisci odio nulla! Dolorum, quas ex! Saepe eum, aspernatur dolore repellat quibusdam explicabo dolorum sit quae est enim veritatis inventore atque delectus. Cupiditate. Лишь многие известные личности, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В целом, конечно, экономическая повестка сегодняшнего дня играет определяющее значение для благоприятных перспектив.</div>
+                  </div>
                 </div>
-                <div class="reviews__text">Текст отзыва. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, excepturi incidunt voluptas cum expedita, porro nemo recusandae ipsum itaque vero soluta assumenda ex deleniti numquam ad est, adipisci odio nulla! Dolorum, quas ex! Saepe eum, aspernatur dolore repellat quibusdam explicabo dolorum sit quae est enim veritatis inventore atque delectus. Cupiditate. Лишь многие известные личности, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В целом, конечно, экономическая повестка сегодняшнего дня играет определяющее значение для благоприятных перспектив.</div>
+    
+                <div class="carousel-item">
+                  <div class="review-card">
+                    <div class="reviews__author">
+                      <div class="reviews__author-name">Имя Автора Отзыва2</div>
+                      <div class="reviews__author-from">Страна, Город</div>
+                    </div>
+                    <div class="reviews__text">Текст отзыва. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, excepturi incidunt voluptas cum expedita, porro nemo recusandae ipsum itaque vero soluta assumenda ex deleniti numquam ad est, adipisci odio nulla!</div>
+                  </div>
+                </div>
+    
+                <div class="carousel-item">
+                  <div class="review-card">
+                    <div class="reviews__author">
+                      <div class="reviews__author-name">Имя Автора Отзыва3</div>
+                      <div class="reviews__author-from">Страна, Город</div>
+                    </div>
+                    <div class="reviews__text">Текст отзыва. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, excepturi incidunt voluptas cum expedita, porro nemo recusandae ipsum itaque vero soluta assumenda ex deleniti numquam ad est, adipisci odio nulla! Dolorum, quas ex! Saepe eum, aspernatur dolore repellat quibusdam explicabo dolorum sit quae est enim veritatis inventore atque delectus. Cupiditate. Лишь многие известные личности, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В целом, конечно, экономическая повестка сегодняшнего дня играет определяющее значение для благоприятных перспектив.</div>
+                  </div>
+                </div>
+    
               </div>
-              <div class="reviews__slider-arrow-left reviews__arrow">‹</div>
-              <div class="reviews__slider-arrow-right reviews__arrow">›</div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <button class="reviews__button">Добавить отзыв</button>
           </div>
+          
+  
+  
         </div>
       </div>
 
@@ -425,9 +438,11 @@
                   <a href="" class="footer__contacts-link" target="_blank">
                     <img src="img/icons/telegram.png" alt="telega">
                   </a>
-                  <a href="" class="footer__contacts-link" target="_blank">
+                  <!--
+                    <a href="" class="footer__contacts-link" target="_blank">
                     <img src="img/icons/youtube.png" alt="youtube">
                   </a>
+                  -->
                 </div>
               </div>
             </div>
@@ -441,5 +456,6 @@
     </div>
 
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
