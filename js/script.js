@@ -64,3 +64,82 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 });
+
+
+// слайдер отзывов
+const reviews = document.querySelectorAll(".review"); // массив со всеми отзывами
+const sliderLine = document.querySelector(".slider-line"); // лента с отзывами 
+let count = 0;
+
+const buttonNext = document.querySelector("#buttonNext");
+const buttonPrev = document.querySelector("#buttonPrev");
+
+
+
+buttonNext.addEventListener("click", slideNextReview);
+buttonPrev.addEventListener("click", slidePrevReview);
+
+sliderLine.addEventListener("touchstart", touchStart, false);
+sliderLine.addEventListener("touchmove", touchMove, false);
+
+
+function slideNextReview() {
+  let width = reviews[0].offsetWidth;
+  count++;
+  if (count >= reviews.length) count = 0;
+  sliderLine.style.transform = "translate(-" + count * width + "px)";
+}
+function slidePrevReview() {
+  let width = reviews[0].offsetWidth;
+  count--;
+  if (count < 0) count = reviews.length - 1;
+  sliderLine.style.transform = "translate(-" + count * width + "px)";
+}
+
+let x1 = null;
+let y1 = null;
+let x2 = null;
+let y2 = null;
+
+function touchStart(event) {
+  const firstTouch = event.touches[0];
+  //console.log(firstTouch);
+
+  x1 = firstTouch.clientX;
+  y1 = firstTouch.clientY;
+  //console.log(x1, y1);
+} 
+function touchMove(event) {
+  if (!x1 || !y1) return false; // если изменения координат не произошло, то false
+  
+  x2 = event.touches[0].clientX;
+  y2 = event.touches[0].clientY;
+  //console.log(x2, y2);
+
+  let xDiff = x2 - x1;  //    Разница между начальными и последующими координатами,
+  let yDiff = y2 - y1;  // чтобы понимать в каком направлении двигается тач
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) { // узнаём, какая координата изменяется больше
+    // right-left
+    if (xDiff > 0){
+      console.log("right"); // свайп вправо -
+      slidePrevReview();    // - предыдущий слайд
+    }  
+    else {
+      console.log("left");   // свайп влево -
+      slideNextReview();     // - следующий слайд
+    }             
+  }               
+  else {           
+    // top-bottom
+    if (yDiff > 0) console.log("down");
+    else console.log("top");
+  }
+  x1 = null;
+  y1 = null;
+}
+
+
+
+
+
