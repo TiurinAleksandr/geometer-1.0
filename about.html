@@ -21,6 +21,9 @@
 
 </head>
 <body>
+  <!--скрипт jQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
   <div class="wrapper">
 
     <!------------------------------------------------   HEADER   -------------------------------------------------------->
@@ -48,36 +51,45 @@
     <!------------------------------------------------   CONTENT   -------------------------------------------------------->
     <div class="content">
       <div class="about-page">
-        <div class="container">
+        <div class="container about-page__container">
           <div class="row adaptive-column">
-            <div class="col-5 about-page__image">
-              <img src="img/big-logo-gold.png" alt="">
-            </div>
             <div class="col about-page__content">
-              <div class="row about-page__title">Компания Geometer</div>
-              <div class="row about-page__text">Geometer - молодая компания, которая занимается всеми видами строительства и ремонта, а также продажей строй-материалов. <br> Geometer - эксперт в области технадзора и управления проектами. Сильная сторона компании - умение видеть компетентность специалистов и строительных бригад, а также способность грамотно общаться с работниками. Благодаря этому, проекты заказчиков выполняют хорошо квалифицированные рабочие.</div>
+              <div class="row about-page__title">Geometer</div>
               <div class="about__facts">
                 <div class="about__fact about__brand">
-                  <div class="about__image">
+                  <div class="about__image about__image-1">
                     <img src="img/about__brand.png" alt="">
                   </div>
                   <div class="about__fact-text">Личный бренд Михаила Бухгаммера</div>
                 </div>
     
                 <div class="about__fact about__function">
-                  <div class="about__image">
+                  <div class="about__image about__image-2">
                     <img src="img/about__function.png" alt="">
                   </div>
                   <div class="about__fact-text">Cпециализируется на управлении строительными и ремонтными проектами и технадзоре</div>
                 </div>
     
               </div>
+              <div class="row about-page__text">
+                <p>Geometer - молодая компания, которая занимается всеми видами строительства и ремонта, а также продажей строй-материалов.</p>
+                <p>Geometer - эксперт в области технадзора и управления проектами. Сильная сторона компании - умение видеть компетентность специалистов и строительных бригад, а также способность грамотно общаться с работниками. Благодаря этому, проекты заказчиков выполняют хорошо квалифицированные рабочие.</p>
+                <p>Geometer уже зарекомендовал себя на рынке строительства как ответственная компания, соблюдающая свои гарантийные обязательства и делающая акцент на качестве работ.</p>
+                <p>На сегодняшний день компания активно развивается, приобретая всё больший ассортимент услуг и расширяя круг благодарных клиентов.</p>
+              </div>
+            
               <div class="about__scheme">
-                <div class="about__scheme-step">скажите, что Вам нужно построить</div> 
-                <div class="about__scheme-arrow">›</div>
-                <div class="about__scheme-step">мы выберем проверенную бригаду</div>
-                <div class="about__scheme-arrow">›</div>
-                <div class="about__scheme-step">она выполнит работу под нашим контролем</div> 
+                <div class="step-1 step">
+                  <div class="about__scheme-step">скажите, что Вам нужно построить</div> 
+                </div>
+                <div class="about__scheme-arrow arr-1">›</div>
+                <div class="step-2 step">
+                  <div class="about__scheme-step">мы выберем проверенную бригаду</div>
+                </div>
+                <div class="about__scheme-arrow arr-2">›</div>
+                <div class="step-3 step">
+                  <div class="about__scheme-step">она выполнит работу под нашим контролем</div> 
+                </div>
               </div>
             </div>    
           </div>
@@ -85,9 +97,9 @@
       </div>
     </div>
     
-    <!------------------------------------------------   FOOTER   -------------------------------------------------------->
-    <div class="about-page__footer">
-      <footer class="footer" id="contacts">
+    <!------------------------------------------------   FOOTER  --------------------------------------------------------->
+    <footer class="footer" id="contacts">
+      <!--footer-->
       <div class="container">
         <div class="footer__content">
           <div class="footer__columns">
@@ -122,13 +134,16 @@
               <div class="footer__title">Контакты</div>
               <div class="footer__contacts-menu">
                 <ul class="footer__contacts-list">
-                  <li><a href="" class="footer__contacts-link" target="_blank">Россия, Калининград</a></li>
-                  <li><a href="" class="footer__contacts-link" target="_blank">8 999 996 33 69</a></li>
-                  <li><a href="" class="footer__contacts-link" target="_blank">Geometr11@mail.ru</a></li>
+                  <li><a href="https://yandex.ru/maps/geo/kaliningrad/53149402/?ll=20.473801%2C54.704529&source=entity_search&z=12" class="footer__contacts-link" target="_blank">Россия, Калининград</a></li>
+                  <li>8 999 996 33 69<a href="" class="footer__contacts-link" target="_blank"></a></li> <!-- не помещаю в ссылку пока -->
+                  <li>Geometr11@mail.ru<a href="" class="footer__contacts-link" target="_blank"></a></li> <!-- не помещаю в ссылку пока -->
+                  <li><a href="https://instagram.com/m_geometr?igshid=YmMyMTA2M2Y=" class="footer__contacts-link" target="_blank">M_GEOMETR</a></li>
                 </ul>
+
+                <!--
                 <div class="footer__contacts-nets">
-                  <a href="" class="footer__contacts-link" target="_blank">
-                    <img src="img/icons/inst.png" alt="inst">
+                  <a href="https://instagram.com/m_geometr?igshid=YmMyMTA2M2Y=" class="footer__contacts-link" target="_blank">
+                    <img src="img/icons/icon-instagram-gold.png" alt="inst">
                   </a>
                   <a href="" class="footer__contacts-link" target="_blank">
                     <img src="img/icons/vk.png" alt="vk">
@@ -139,6 +154,7 @@
                   <a href="" class="footer__contacts-link" target="_blank">
                     <img src="img/icons/youtube.png" alt="youtube">
                   </a>
+                  -->
                 </div>
               </div>
             </div>
@@ -149,9 +165,7 @@
     </footer>
     <div class="footer__copyright">
       <p>© Michael Buchhammer & Geometer</p>
-    </div>
-    </div>
-    
+    </div>    
   </div>
 
   <!--скрипт-->
@@ -159,6 +173,5 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   -->
-  <script src="js/script.js"></script>
 </body>
 </html>  
